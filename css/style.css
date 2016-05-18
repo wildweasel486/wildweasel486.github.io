@@ -111,6 +111,7 @@ p {
 
 blockquote {
 	padding: 1.5em;
+	line-height:120%;
 }
 
 ul, ol, dl {
