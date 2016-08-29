@@ -1,0 +1,201 @@
+#mobile {
+	display: none;
+}
+#desktop {
+	display: inline;
+}
+
+body {
+	background-color: #EEEEEE;
+	color: #000000;
+	font-family: 'Nunito', sans-serif;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: 'Kanit', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+	padding-left: 20px;
+	height: 72px;
+	line-height: 200%;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #000000;
+}
+
+h3 {
+	color: #000000;
+}
+
+main {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #FFFFFF;
+	margin-left: 170px;
+}
+main img, main video, main embed {
+	float: right;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+main ul {
+	list-style-position: inside;
+}
+
+dt {
+	color: #000033;
+	font-weight: bold;
+}
+
+nav {
+	left: 160px;
+	padding-top: 20px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	float: left;
+	font-family: 'Kanit', sans-serif;
+	font-size: 150%;
+}
+nav a {
+	text-decoration: none;
+	padding-right: 5px;
+	display: block;
+}
+nav a:link {
+	color: #000033;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #660000;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+table {	
+	border: 1px solid #3399cc;
+	border-collapse: collapse;
+	width: 90%;
+	margin: auto;
+}
+
+td, th {
+	padding: 5px;
+	border: 1px solid #3399cc;
+}
+
+td {
+	text-align: center;
+}
+
+.text {
+	text-align: left;
+}
+
+tr:nth-of-type(even) {
+	background-color: #F5FAFC;
+}
+
+strong {
+	color: #000033;
+	font-size: 1.4em;
+	font-family: 'Kanit', sans-serif;
+}
+
+footer {
+	background-color: #FFFFFF;
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	padding: 10px;
+	margin-left: 170px;
+}
+
+.wrapper {
+	background-color: #FFFFFF;
+	min-width: 700px;
+	max-width: 1350px;
+	min-height: 630px;
+	box-shadow: 3px 3px 3px #666;
+	margin: auto;
+}
+
+.clear { clear: both; }
+header, nav, main, footer { display: block; }
+
+/* Reservation form */
+label {
+	float: left;
+	display: block;
+	width: 8em;
+	padding-right: 5em;
+}
+
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+mySubmit {
+	margin-left: 10em;
+}
+
+/*Image gallery*/
+#gallery {	
+	position: relative;
+	height: 250px;
+}
+#gallery ul {
+	width: 270px;
+	list-style-type: none;
+}
+#gallery li {
+	display: inline-block;
+	padding: 5px;
+}
+#gallery img {
+	border-style: none;
+	float: none;
+}
+#gallery a {
+	text-decoration: none;
+	color: #333;
+	font-style: italic;
+}
+#gallery span {
+	display: none;
+	left: 340px;
+}
+#gallery a:hover span {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 340px;
+	text-align: center;
+}
+
+footer {
+	float: clear;
+}
