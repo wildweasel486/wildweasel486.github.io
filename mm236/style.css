@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(226, 193, 141); /*Sampled from the background image for consistency*/
+	background-image: url("ww-background.png");
+	font-family: 'Fjalla One', sans-serif;
+	padding: 3em;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Candal', sans-serif;
+	padding: 1em;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 180%;
+}
+h3 {
+	font-size: 160%;
+}
+h4 {
+	font-size: 140%;
+}
+h5 {
+	font-size: 120%;
+}
+
+header {
+	background-color: rgba(64, 64, 64, 0.75);
+	color: rgb(192, 192, 192);
+	padding: 2em;
+}
+
+main {
+	background-color: rgba(255, 221, 187, 0.4);
+	color: rgb(102, 68, 34); /*#664422; Darker tan. */
+	padding: 2em;
+}
+
+p {
+	line-height: 200%;
+}
+
+blockquote {
+	padding: 1.5em;
+}
+
+ul, ol, dl {
+	line-height: 120%;
+	padding: 0.5em;
+}
+
+ul {
+	list-style-image: url("ff-finger.png");
+}
+
+dd {
+	margin-top: 0.5em;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+a:link {
+	color: maroon;
+}
+a:visited {
+	color: firebrick;
+	font-weight: bold;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+		margin-bottom: 10px;
+		width: 200px;
+		border: 1px solid #000000;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+figcaption {
+	text-align: center;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+strong {
+	font-weight: bold;
+}
+
+footer {
+	background-color: rgba(255, 221, 187, 0.4);
+	font-size: 80%;
+	padding: 2em;
+}
+
+table, th, td {
+	background-color: rgba(192, 192, 192, 0.4);
+	border: 1px solid black;
+	border-collapse: initial;
+	padding: 0.3em;
+}
+
+th {
+	font-family: 'Candal', sans-serif;
+	font-weight: bold;
+}
+
+/* BEGIN SILLY HACK SECTION */
+
+footer:before, footer:after {
+	content: "";
+	display: table;
+}
+
+footer:after {
+	clear: both;
+}
+
+/* END SILLY HACK SECTION */
+
+footer div {
+	padding: 2em;
+	width: 50%;
+	background-color: rgba(128, 128, 128, 0.5);
+	float: left;
+	/*display: block;*/ /* I'm not even sure what this does. */
+}
+
+.copyright {
+	padding-top: 2em;
+	font-size: 85%;
+	font-style: italic;
+}
+
+/* Mobile browser detection: enlarges font sizes and shifts two-column footer to one-column. */
+
+@media only all and (max-width: 768px) {
+	main {
+		padding: 1em;
+		font-size: 130%;
+	}
+	
+	main li {
+		padding-bottom: 0.3em;
+	}
+	
+	footer div {
+		padding: 0;
+		width: 100%;
+		padding-left: 2em;
+	}
+}
